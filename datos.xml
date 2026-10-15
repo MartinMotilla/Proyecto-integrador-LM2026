@@ -5,7 +5,7 @@
      - El número de cada artículo
      - La fecha de adquisición
 -->
-
+<!-- Martin Motilla Ayuso - 15-10-2026 -->
 <articulos>
     <articulo id="001">
         <tipo>Estampitas</tipo>
