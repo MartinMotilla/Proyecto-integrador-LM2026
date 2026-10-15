@@ -1,77 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- los datos de la lista contienen:
-       - El numero de cada articulo
-       - la fecha de adquisición
-       - el tipo de articulo-->
 
-<articulo>
-    <Tipo id="001">
-        <titulo>Estampitas</titulo>
-    </Tipo>
-</articulo>
+<!-- Los datos de la lista contienen:
+     - El tipo de artículo
+     - El número de cada artículo
+     - La fecha de adquisición
+-->
 
-<articulo>
-    <Tipo id="002">
-        <titulo>Posters</titulo>
-    </Tipo>
-</articulo>
+<articulos>
+    <articulo id="001">
+        <tipo>Estampitas</tipo>
+    </articulo>
 
-<articulo>
-    <Tipo id="003">
-        <titulo>Calendarios cofrades</titulo>
-    </Tipo>
-</articulo>
+    <articulo id="002">
+        <tipo>Posters</tipo>
+    </articulo>
 
-<articulo>
-    <Tipo id="004">
-        <titulo>Medallitas</titulo>
-    </Tipo>
-</articulo>
+    <articulo id="003">
+        <tipo>Calendarios cofrades</tipo>
+    </articulo>
 
-<articulo>
-    <Tipo id="005">
-        <titulo>Medallas de hermandades</titulo>
-    </Tipo>
-</articulo>
+    <articulo id="004">
+        <tipo>Medallitas</tipo>
+    </articulo>
 
-<articulo>
-    <Tipo id="006">
-        <titulo>Rosarios</titulo>
-    </Tipo>
-</articulo>
+    <articulo id="005">
+        <tipo>Medallas de hermandades</tipo>
+    </articulo>
 
-<articulo>
-    <Tipo id="007">
-        <titulo>Pulseras</titulo>
-    </Tipo>
-</articulo>
+    <articulo id="006">
+        <tipo>Rosarios</tipo>
+    </articulo>
 
-<articulo>
-    <Tipo id="008">
-        <titulo>Balconeras</titulo>
-    </Tipo>
-</articulo>
+    <articulo id="007">
+        <tipo>Pulseras</tipo>
+    </articulo>
 
-<articulo>
-    <Tipo id="009">
-        <titulo>Imanes</titulo>
-    </Tipo>
-</articulo>
+    <articulo id="008">
+        <tipo>Balconeras</tipo>
+    </articulo>
 
-<articulo>
-    <Tipo id="010">
-        <titulo>Libros</titulo>
-    </Tipo>
-</articulo>
+    <articulo id="009">
+        <tipo>Imanes</tipo>
+    </articulo>
 
-<articulo>
-    <Tipo id="011">
-        <titulo>Revistas</titulo>
-    </Tipo>
-</articulo>
+    <articulo id="010">
+        <tipo>Libros</tipo>
+    </articulo>
 
-<articulo>
-    <Tipo id="012">
-        <titulo>Programas de semana santa</titulo>
-    </Tipo>
-</articulo>
+    <articulo id="011">
+        <tipo>Revistas</tipo>
+    </articulo>
+
+    <articulo id="012">
+        <tipo>Programas de Semana Santa</tipo>
+    </articulo>
+</articulos>
