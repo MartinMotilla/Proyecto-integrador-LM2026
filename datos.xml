@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- los datos de la lista contienen:
+       - El numero de cada articulo
+       - la fecha de adquisición
+       - el tipo de articulo-->
+
+<Artculo>
+    <Tipo>
+        
+    </Tipo>
+</Artculo>
