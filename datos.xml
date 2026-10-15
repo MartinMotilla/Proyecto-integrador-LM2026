@@ -4,8 +4,74 @@
        - la fecha de adquisición
        - el tipo de articulo-->
 
-<Artculo>
-    <Tipo>
-        
+<articulo>
+    <Tipo id="001">
+        <titulo>Estampitas</titulo>
     </Tipo>
-</Artculo>
+</articulo>
+
+<artículo>
+    <Tipo id="002">
+        <titulo>Posters</titulo>
+    </Tipo>
+</articulo>
+
+<articulo>
+    <Tipo id="003">
+        <titulo>Calendarios cofrades</titulo>
+    </Tipo>
+</articulo>
+
+<articulo>
+    <Tipo id="004">
+        <titulo>Medallitas</titulo>
+    </Tipo>
+</articulo>
+
+<articulo>
+    <Tipo id="005">
+        <titulo>Medallas de hermandades</titulo>
+    </Tipo>
+</articulo>
+
+<articulo>
+    <Tipo id="006">
+        <titulo>Rosarios</titulo>
+    </Tipo>
+</articulo>
+
+<articulo>
+    <Tipo id="007">
+        <titulo>Pulseras</titulo>
+    </Tipo>
+</articulo>
+
+<articulo>
+    <Tipo id="008">
+        <titulo>Balconeras</titulo>
+    </Tipo>
+</articulo>
+
+<articulo>
+    <Tipo id="009">
+        <titulo>Imanes</titulo>
+    </Tipo>
+</articulo>
+
+<articulo>
+    <Tipo id="010">
+        <titulo>Libros</titulo>
+    </Tipo>
+</articulo>
+
+<articulo>
+    <Tipo id="011">
+        <titulo>Revistas</titulo>
+    </Tipo>
+</articulo>
+
+<articulo>
+    <Tipo id="012">
+        <titulo>Programas de semana santa</titulo>
+    </Tipo>
+</articulo>
