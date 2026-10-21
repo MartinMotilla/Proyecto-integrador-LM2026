@@ -4,54 +4,101 @@
      - El tipo de artículo
      - El número de cada artículo
      - La fecha de adquisición
+     -duracion cortejo procesional
 -->
 <!-- Martin Motilla Ayuso - 15-10-2026 -->
-<articulos>
-    <articulo id="001">
-        <tipo>Estampitas</tipo>
-    </articulo>
+<articulos propietario="MartinMotiila">
+  <articulo id="001">
+    <tipo>Estampitas</tipo>
+    <fecha_adquisicion></fecha_adquisicion>
+    <procedencia></procedencia>
+    <numero_articulo></numero_articulo>
+</articulo>
 
     <articulo id="002">
         <tipo>Posters</tipo>
+        <fecha_adquisicion></fecha_adquisicion>
+    <procedencia></procedencia>
+    <numero_articulo></numero_articulo>
     </articulo>
 
     <articulo id="003">
         <tipo>Calendarios cofrades</tipo>
+        <fecha_adquisicion></fecha_adquisicion>
+    <procedencia></procedencia>
+    <numero_articulo></numero_articulo>
     </articulo>
 
     <articulo id="004">
         <tipo>Medallitas</tipo>
+          <fecha_adquisicion></fecha_adquisicion>
+            <procedencia></procedencia>
+                <numero_articulo></numero_articulo>
     </articulo>
 
     <articulo id="005">
         <tipo>Medallas de hermandades</tipo>
+       <fecha_adquisicion></fecha_adquisicion>
+            <procedencia></procedencia>
+                <numero_articulo></numero_articulo>
     </articulo>
 
     <articulo id="006">
         <tipo>Rosarios</tipo>
+        <fecha_adquisicion></fecha_adquisicion>
+            <procedencia></procedencia>
+                <numero_articulo></numero_articulo>
     </articulo>
 
     <articulo id="007">
         <tipo>Pulseras</tipo>
+        <fecha_adquisicion></fecha_adquisicion>
+            <procedencia></procedencia>
+                <numero_articulo></numero_articulo>
     </articulo>
 
     <articulo id="008">
         <tipo>Balconeras</tipo>
+        <fecha_adquisicion></fecha_adquisicion>
+            <procedencia></procedencia>
+                <numero_articulo></numero_articulo>
     </articulo>
 
     <articulo id="009">
         <tipo>Imanes</tipo>
+       <fecha_adquisicion></fecha_adquisicion>
+            <procedencia></procedencia>
+                <numero_articulo></numero_articulo>
     </articulo>
 
     <articulo id="010">
         <tipo>Libros</tipo>
+        <fecha_adquisicion></fecha_adquisicion>
+            <procedencia></procedencia>
+                <numero_articulo></numero_articulo>
     </articulo>
 
     <articulo id="011">
         <tipo>Revistas</tipo>
+       <fecha_adquisicion></fecha_adquisicion>
+            <procedencia></procedencia>
+                <numero_articulo></numero_articulo>
     </articulo>
 
     <articulo id="012">
         <tipo>Programas de Semana Santa</tipo>
+        <fecha_adquisicion></fecha_adquisicion>
+            <procedencia></procedencia>
+                <numero_articulo></numero_articulo>
+    </articulo>
+
+    <articulo id="013">
+        <tipo>Holy Cards</tipo>
+         <fecha_adquisicion></fecha_adquisicion>
+            <procedencia></procedencia>
+                <numero_articulo></numero_articulo>
+
+    <destacado/>
+
     </articulo>
 </articulos>
