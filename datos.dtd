@@ -1,0 +1,4 @@
+<!ELEMENT articulo (Tipo)>
+<!ELEMENT Tipo (titulo)>
+<!ATTLIST Tipo id NMTOKEN #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
