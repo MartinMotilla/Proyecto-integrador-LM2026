@@ -13,6 +13,7 @@
     <fecha_adquisicion></fecha_adquisicion>
     <procedencia></procedencia>
     <numero_articulo></numero_articulo>
+    <duracion_cortejo_pocesional></duracion_cotejo_procesional>
 </articulo>
 
     <articulo id="002">
