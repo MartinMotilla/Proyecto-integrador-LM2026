@@ -13,5 +13,106 @@
 <body>
     <p>este es mi contacto por si quereis contactar conmigo para hace donacion de articulos para la coleccion: martinalexeyma2006@gmail.com</p>
     Recojo de todo: estampitas, posters, calendarios cofrades, imanes, pins, balconeras, medallitas, meddallas de hermandades, pulseras, rosarios, libros, revistas, programas de semana santa
+    <form action="proceso.php" method="post"> ... controles ... </form>
+    <label for="nombre">Nombre</label>
+
+<input type="text" id="nombre"
+
+name="nombre" required
+
+maxlength="40" autofocus>
+
+<label for="correo">Correo</label>
+
+<input type="email" id="correo"
+
+name="correo" required>
+
+<label for="tel">Teléfono</label>
+
+<input type="tel" id="tel" name="tel">
+<label for="msg">Mensaje</label>
+
+<textarea id="msg" name="msg"
+
+rows="5" cols="40"
+
+minlength="10"></textarea>
+
+<label for="art">Articulos</label>
+
+<select id="art" name="art">
+
+<option value="est">Estampitas</option>
+
+<option value="post" selected>
+
+posters</option>
+
+<option value="medal" selected>
+
+medallitas</option>
+
+<option value="" selected>
+
+Calendarios cofrades</option>
+
+<option value="post" selected>
+
+Medallas de hermandades</option>
+
+<option value="post" selected>
+
+posters</option>
+
+<option value="post" selected>
+
+posters</option>
+
+<option value="post" selected>
+
+posters</option>
+
+<option value="post" selected>
+
+posters</option>
+
+</select>
+
+<input type="checkbox" id="c1"
+
+name="extras" value="seguro" checked>
+
+<label for="c1">Seguro</label>
+
+<input type="checkbox" id="c2"
+
+name="extras" value="guia">
+
+<label for="c2">Guía</label>
+
+<form action="#" method="post">
+
+<fieldset>
+
+<legend>Tus datos</legend>
+
+...nombre, correo, teléfono
+
+</fieldset>
+
+<fieldset>
+
+<legend>Tu consulta</legend>
+
+...destino, extras, mensaje
+
+</fieldset>
+
+<input type="submit" value="Enviar">
+
+<input type="reset" value="Borrar">
+
+</form>
 </body>
 </html>
