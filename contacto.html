@@ -13,7 +13,8 @@
 <body>
     <p>este es mi contacto por si quereis contactar conmigo para hace donacion de articulos para la coleccion: martinalexeyma2006@gmail.com</p>
     Recojo de todo: estampitas, posters, calendarios cofrades, imanes, pins, balconeras, medallitas, meddallas de hermandades, pulseras, rosarios, libros, revistas, programas de semana santa
-    <form action="proceso.php" method="post"> ... controles ... </form>
+   <p>En este formulario podras dar tu informacion para poder saber que tipo articuilos tienes y lo que puedes donar</p> 
+    <form action="proceso.php" method="post"></form>
     <label for="nombre">Nombre</label>
 
 <input type="text" id="nombre"
@@ -63,34 +64,75 @@ Medallas de hermandades</option>
 
 <option value="post" selected>
 
-posters</option>
+Rosarios</option>
 
 <option value="post" selected>
 
-posters</option>
+Pulseras</option>
 
 <option value="post" selected>
 
-posters</option>
+Balconeras tela</option>
 
 <option value="post" selected>
 
-posters</option>
+Imanes</option>
 
+<option value="post" selected>
+
+Libros</option>
+
+<option value="post" selected>
+
+Revistas</option>
+
+<option value="post" selected>
+
+Programas de Semana Santa</option>
+
+<option value="post" selected>
+
+Anuarios</option>
+
+<option value="post" selected>
+
+Boletines</option>
+
+<option value="post" selected>
+
+Pins</option>
+
+<option value="post" selected>
+
+llaveros</option>
 </select>
+<form>
+    <p>PREGUNTAS </p>
+    <p>- ¿Eres cristiano (religión)?</p>
 
-<input type="checkbox" id="c1"
+    <input type="radio" id="r1" name="religion" value="si">
+    <label for="r1">Sí</label>
 
-name="extras" value="seguro" checked>
+    <input type="radio" id="r2" name="religion" value="no">
+    <label for="r2">No</label>
 
-<label for="c1">Seguro</label>
 
-<input type="checkbox" id="c2"
+    <p>- ¿Te gusta la Semana Santa?</p>
 
-name="extras" value="guia">
+    <input type="radio" id="r3" name="semana_santa" value="si">
+    <label for="r3">Sí</label>
 
-<label for="c2">Guía</label>
+    <input type="radio" id="r4" name="semana_santa" value="no">
+    <label for="r4">No</label>
 
+    <p>- ¿Tienes material cofrade?</p>
+
+    <input type="radio" id="r5" name="material_cofrade" value="si">
+    <label for="r5">Sí</label>
+
+    <input type="radio" id="r6" name="material_cofrade" value="no">
+    <label for="r6">No</label>
+</form>
 <form action="#" method="post">
 
 <fieldset>
@@ -105,14 +147,14 @@ name="extras" value="guia">
 
 <legend>Tu consulta</legend>
 
-...destino, extras, mensaje
-
 </fieldset>
 
 <input type="submit" value="Enviar">
 
 <input type="reset" value="Borrar">
 
+</form>
+<form>
 </form>
 </body>
 </html>
