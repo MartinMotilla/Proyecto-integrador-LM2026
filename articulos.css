@@ -1,0 +1,50 @@
+/* Estilo general de la tabla */
+.tabla-articulos {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #fffdf5;
+}
+
+/* Título */
+.tabla-articulos caption {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4b2354;
+    padding: 15px;
+}
+
+/* Encabezados */
+.tabla-articulos th {
+    background-color: #4b2354;
+    color: white;
+    padding: 12px;
+    border: 1px solid #c5a047;
+}
+
+/* Celdas */
+.tabla-articulos td {
+    padding: 12px;
+    border: 1px solid #c5a047;
+    text-align: center;
+}
+
+/* Filas alternas */
+.tabla-articulos tbody tr:nth-child(even) {
+    background-color: #f0e8f2;
+}
+
+.tabla-articulos tbody tr:nth-child(odd) {
+    background-color: #fffdf5;
+}
+
+/* Efecto al pasar el ratón */
+.tabla-articulos tbody tr:hover {
+    background-color: #e4d5a7;
+}
+
+/* Adaptación a pantallas pequeñas */
+.contenedor-tabla {
+    width: 100%;
+    overflow-x: auto;
+}
