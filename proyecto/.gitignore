@@ -1,0 +1,10 @@
+# Archivos de Windows
+Thumbs.db
+desktop.ini
+
+# Configuración de VS Code
+.vscode/
+
+# Archivos temporales
+*.tmp
+*.log
