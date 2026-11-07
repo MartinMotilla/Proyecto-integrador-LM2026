@@ -8,10 +8,10 @@
 -->
 <!-- Martin Motilla Ayuso - 15-10-2026 -->
 <articulos propietario="MartinMotilla">
-  <articulo id="001">
+ <articulo id="001">
     <tipo>Estampitas</tipo>
-    <fecha_adquisicion></fecha_adquisicion>
-    <procedencia></procedencia>
+    <fecha_adquisicion>27-10-2026</fecha_adquisicion>
+    <procedencia>insti medac</procedencia>
     <numero_articulo></numero_articulo>
     <duracion_cortejo_procesional></duracion_cortejo_procesional>
 </articulo>
