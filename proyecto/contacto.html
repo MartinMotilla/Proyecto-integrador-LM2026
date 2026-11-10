@@ -2,159 +2,142 @@
 <html lang="es">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacto | semana santa guiness world record</title>
-        <meta name="description" content="Proyecto sobre la coleccion cofrade mas grande del mundo">
-        <meta name="keywords" content="semana santa, coleccion, guinness world record, 2028">
-        <meta name="author" content="Martin Alexey Motilla Ayuso">
-        <!-- Martin Motilla Ayuso · 22-10-2026-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | semana santa guiness world record</title>
+  <meta name="description" content="Proyecto sobre la colección cofrade más grande del mundo">
+  <meta name="keywords" content="semana santa, coleccion, guinness world record, 2028">
+  <meta name="author" content="Martin Alexey Motilla Ayuso">
+  <!-- Martin Motilla Ayuso · 22-10-2026 -->
 </head>
+
 <body>
-    <p>este es mi contacto por si quereis contactar conmigo para hace donacion de articulos para la coleccion: martinalexeyma2006@gmail.com</p>
-    Recojo de todo: estampitas, posters, calendarios cofrades, imanes, pins, balconeras, medallitas, meddallas de hermandades, pulseras, rosarios, libros, revistas, programas de semana santa
-   <p>En este formulario podras dar tu informacion para poder saber que tipo articuilos tienes y lo que puedes donar</p> 
-    <form action="proceso.php" method="post"></form>
-    <label for="nombre">Nombre</label>
 
-<input type="text" id="nombre"
+  <p>
+    Este es mi contacto por si queréis contactar conmigo para hacer
+    donaciones de artículos para la colección:
+    martinalexeyma2006@gmail.com
+  </p>
 
-name="nombre" required
+  <p>
+    Recojo de todo: estampitas, pósteres, calendarios cofrades,
+    imanes, pins, balconeras, medallitas, medallas de hermandades,
+    pulseras, rosarios, libros, revistas y programas de Semana Santa.
+  </p>
 
-maxlength="40" autofocus>
+  <p>
+    En este formulario podrás dar tu información para poder saber
+    qué tipo de artículos tienes y cuáles puedes donar.
+  </p>
 
-<label for="correo">Correo</label>
+  <!-- Formulario de contacto de la colección cofrade -->
+  <form action="#" method="post">
 
-<input type="email" id="correo"
+    <fieldset>
+      <legend>Tus datos</legend>
 
-name="correo" required>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"
+        required minlength="3" maxlength="40"
+        placeholder="Escribe tu nombre" autofocus>
 
-<label for="tel">Teléfono</label>
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo"
+        required maxlength="100"
+        placeholder="ejemplo@correo.com">
 
-<input type="tel" id="tel" name="tel">
-<label for="msg">Mensaje</label>
+      <label for="tel">Teléfono:</label>
+      <input type="tel" id="tel" name="tel"
+        placeholder="Escribe tu teléfono">
 
-<textarea id="msg" name="msg"
+      <label for="web">Página web (opcional):</label>
+      <input type="url" id="web" name="web"
+        placeholder="https://www.ejemplo.com">
 
-rows="5" cols="40"
+    </fieldset>
 
-minlength="10"></textarea>
+    <fieldset>
+      <legend>Tu consulta y artículos cofrades</legend>
 
-<label for="art">Articulos</label>
+      <label for="msg">Mensaje:</label>
+      <textarea id="msg" name="msg"
+        rows="5" cols="40"
+        minlength="10" maxlength="500"
+        placeholder="Cuéntame qué artículos puedes donar"></textarea>
 
-<select id="art" name="art">
+      <label for="art">Tipo de artículo:</label>
+      <select id="art" name="art" required>
+        <option value="" selected disabled>Selecciona un artículo</option>
+        <option value="estampitas">Estampitas</option>
+        <option value="posters">Pósteres</option>
+        <option value="medallitas">Medallitas</option>
+        <option value="calendarios">Calendarios cofrades</option>
+        <option value="medallas">Medallas de hermandades</option>
+        <option value="rosarios">Rosarios</option>
+        <option value="pulseras">Pulseras</option>
+        <option value="balconeras">Balconeras</option>
+        <option value="imanes">Imanes</option>
+        <option value="libros">Libros</option>
+        <option value="revistas">Revistas</option>
+        <option value="programas">Programas de Semana Santa</option>
+        <option value="anuarios">Anuarios</option>
+        <option value="boletines">Boletines</option>
+        <option value="pins">Pins</option>
+        <option value="llaveros">Llaveros</option>
+      </select>
 
-<option value="est">Estampitas</option>
+      <label for="cantidad">Cantidad de artículos que puedes donar:</label>
+      <input type="number" id="cantidad" name="cantidad"
+        min="1" max="100000" value="1">
 
-<option value="post" selected>
+      <label for="fecha">Fecha aproximada de entrega:</label>
+      <input type="date" id="fecha" name="fecha">
 
-posters</option>
+      <p>¿Qué otros artículos tienes?</p>
 
-<option value="medal" selected>
+      <input type="checkbox" id="extra1" name="otros_articulos[]" value="estampitas">
+      <label for="extra1">Estampitas</label>
 
-medallitas</option>
+      <input type="checkbox" id="extra2" name="otros_articulos[]" value="libros">
+      <label for="extra2">Libros</label>
 
-<option value="" selected>
+      <input type="checkbox" id="extra3" name="otros_articulos[]" value="programas">
+      <label for="extra3">Programas de Semana Santa</label>
 
-Calendarios cofrades</option>
+      <p>¿Eres cristiano (religión)?</p>
 
-<option value="post" selected>
+      <input type="radio" id="r1" name="religion" value="si">
+      <label for="r1">Sí</label>
 
-Medallas de hermandades</option>
+      <input type="radio" id="r2" name="religion" value="no">
+      <label for="r2">No</label>
 
-<option value="post" selected>
+      <input type="radio" id="r3" name="religion" value="prefiero_no_responder" checked>
+      <label for="r3">Prefiero no responder</label>
 
-Rosarios</option>
+      <p>¿Te gusta la Semana Santa?</p>
 
-<option value="post" selected>
+      <input type="radio" id="r4" name="semana_santa" value="si">
+      <label for="r4">Sí</label>
 
-Pulseras</option>
+      <input type="radio" id="r5" name="semana_santa" value="no">
+      <label for="r5">No</label>
 
-<option value="post" selected>
+      <p>¿Tienes material cofrade?</p>
 
-Balconeras tela</option>
+      <input type="radio" id="r6" name="material_cofrade" value="si">
+      <label for="r6">Sí</label>
 
-<option value="post" selected>
+      <input type="radio" id="r7" name="material_cofrade" value="no">
+      <label for="r7">No</label>
 
-Imanes</option>
+    </fieldset>
 
-<option value="post" selected>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
 
-Libros</option>
+  </form>
 
-<option value="post" selected>
-
-Revistas</option>
-
-<option value="post" selected>
-
-Programas de Semana Santa</option>
-
-<option value="post" selected>
-
-Anuarios</option>
-
-<option value="post" selected>
-
-Boletines</option>
-
-<option value="post" selected>
-
-Pins</option>
-
-<option value="post" selected>
-
-llaveros</option>
-</select>
-<form>
-    <p>PREGUNTAS </p>
-    <p>- ¿Eres cristiano (religión)?</p>
-
-    <input type="radio" id="r1" name="religion" value="si">
-    <label for="r1">Sí</label>
-
-    <input type="radio" id="r2" name="religion" value="no">
-    <label for="r2">No</label>
-
-
-    <p>- ¿Te gusta la Semana Santa?</p>
-
-    <input type="radio" id="r3" name="semana_santa" value="si">
-    <label for="r3">Sí</label>
-
-    <input type="radio" id="r4" name="semana_santa" value="no">
-    <label for="r4">No</label>
-
-    <p>- ¿Tienes material cofrade?</p>
-
-    <input type="radio" id="r5" name="material_cofrade" value="si">
-    <label for="r5">Sí</label>
-
-    <input type="radio" id="r6" name="material_cofrade" value="no">
-    <label for="r6">No</label>
-</form>
-<form action="#" method="post">
-
-<fieldset>
-
-<legend>Tus datos</legend>
-
-...nombre, correo, teléfono
-
-</fieldset>
-
-<fieldset>
-
-<legend>Tu consulta</legend>
-
-</fieldset>
-
-<input type="submit" value="Enviar">
-
-<input type="reset" value="Borrar">
-
-</form>
-<form>
-</form>
 </body>
+
 </html>
