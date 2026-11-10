@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!DOCTYPE articulos SYSTEM "datos.dtd">
 <!-- Los datos de la lista contienen:
      - El tipo de artículo
      - El número de cada artículo
@@ -7,7 +7,9 @@
      -duracion cortejo procesional
 -->
 <!-- Martin Motilla Ayuso - 15-10-2026 -->
-<articulos propietario="MartinMotilla">
+<articulos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="datos.xsd"
+           propietario="MartinMotilla">
  <articulo id="001">
     <tipo>Estampitas</tipo>
     <fecha_adquisicion>27-10-2026</fecha_adquisicion>

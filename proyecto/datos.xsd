@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="articulo">
+
+    <xs:element name="articulos">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="Tipo">
+                <xs:element name="articulo" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="titulo" type="xs:string" />
+                            <xs:element name="tipo" type="xs:string"/>
+                            <xs:element name="fecha_adquisicion" type="xs:string"/>
+                            <xs:element name="procedencia" type="xs:string"/>
+                            <xs:element name="numero_articulo" type="xs:string"/>
+                            <xs:element name="duracion_cortejo_procesional" type="xs:string" minOccurs="0"/>
+                            <xs:element name="destacado" minOccurs="0"/>
                         </xs:sequence>
-                        <xs:attribute name="id" type="xs:integer" use="required" />
+                        <xs:attribute name="id" type="xs:string" use="required"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
+            <xs:attribute name="propietario" type="xs:string" use="required"/>
         </xs:complexType>
     </xs:element>
+
 </xs:schema>

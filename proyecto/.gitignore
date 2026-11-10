@@ -8,3 +8,5 @@ desktop.ini
 # Archivos temporales
 *.tmp
 *.log
+# Copias de seguridad locales
+*.bak

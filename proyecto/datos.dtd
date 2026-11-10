@@ -1,4 +1,14 @@
-<!ELEMENT articulo (Tipo)>
-<!ELEMENT Tipo (titulo)>
-<!ATTLIST Tipo id NMTOKEN #REQUIRED>
-<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT articulos (articulo+)>
+<!ATTLIST articulos propietario CDATA #REQUIRED>
+<!ATTLIST articulos xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST articulos xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+
+<!ELEMENT articulo (tipo, fecha_adquisicion, procedencia, numero_articulo, duracion_cortejo_procesional?, destacado?)>
+<!ATTLIST articulo id NMTOKEN #REQUIRED>
+
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT fecha_adquisicion (#PCDATA)>
+<!ELEMENT procedencia (#PCDATA)>
+<!ELEMENT numero_articulo (#PCDATA)>
+<!ELEMENT duracion_cortejo_procesional (#PCDATA)>
+<!ELEMENT destacado EMPTY>
