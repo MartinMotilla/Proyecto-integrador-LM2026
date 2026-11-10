@@ -1,0 +1,171 @@
+
+/* Martin Motilla Ayuso · 10-11-2026 */
+/* Estilos de la página de contacto */
+
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffdf5;
+    color: #333333;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Párrafos */
+p {
+    max-width: 900px;
+    margin: 15px auto;
+    font-size: 16px;
+}
+
+/* Correo electrónico */
+body > p:first-of-type {
+    background-color: #f1eaf3;
+    border-left: 5px solid #4b2354;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Formulario */
+form {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #c5a047;
+    border-radius: 12px;
+}
+
+/* Apartados */
+fieldset {
+    border: 2px solid #4b2354;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/* Títulos de los apartados */
+legend {
+    color: #4b2354;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+/* Etiquetas */
+label {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #4b2354;
+}
+
+/* Campos de texto */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 15px;
+    border: 1px solid #c5a047;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #fffdf5;
+}
+
+/* Área del mensaje */
+textarea {
+    resize: vertical;
+}
+
+/* Efecto al seleccionar un campo */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #4b2354;
+    background-color: white;
+}
+
+/* Casillas y botones de opción */
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 12px 5px 12px 0;
+    accent-color: #4b2354;
+}
+
+/* Preguntas del formulario */
+fieldset p {
+    color: #4b2354;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Botón enviar */
+input[type="submit"] {
+    background-color: #4b2354;
+    color: white;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Botón borrar */
+input[type="reset"] {
+    background-color: #c5a047;
+    color: white;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Efectos de los botones */
+input[type="submit"]:hover {
+    background-color: #35183d;
+}
+
+input[type="reset"]:hover {
+    background-color: #a78332;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+
+    legend {
+        font-size: 17px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
