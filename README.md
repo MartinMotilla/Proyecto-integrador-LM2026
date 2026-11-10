@@ -75,7 +75,7 @@ La colección incluye diferentes categorías:
 
 - Estampitas.
 - Holy cards.
-- Posters.
+- Pósteres.
 - Calendarios cofrades.
 - Medallitas.
 - Medallas de hermandades.
@@ -109,7 +109,6 @@ La colección está abierta a artículos de cualquier lugar y año. Cuanto más 
 Proyecto-integrador-LM2026/
 │
 ├── README.md
-│
 ├── img/
 │   ├── ap humildad.jpg
 │   ├── cristo cigarreras.jpg
@@ -152,18 +151,81 @@ Además, quiero dedicar una sección del proyecto a las personas y negocios que 
 
 - **UD1-UD2:** primera entrega del proyecto, trabajando con HTML y XML.
 - **UD3:** ampliación y mejora del sitio web, incorporando nuevos contenidos y estilos CSS.
+- **UD5:** incorporación de una tabla de artículos y un formulario de contacto.
 
-## 9. Autor
+## 9. Trabajo realizado en la UD5: Tablas y formularios
+
+### Tabla de artículos
+
+En esta unidad he trabajado con la tabla de artículos de mi colección, utilizando diferentes elementos HTML para organizar los datos:
+
+- `<caption>` para añadir el título de la tabla.
+- `<thead>` para agrupar los encabezados.
+- `<tbody>` para agrupar los datos.
+- `<tfoot>` para incluir el resumen final.
+- `<th>` para identificar los encabezados de columnas y filas.
+- `<colgroup>` y `<col>` para organizar las columnas.
+- `colspan` para combinar celdas horizontalmente.
+- `rowspan` para combinar celdas verticalmente.
+
+También he utilizado los atributos `scope="col"` y `scope="row"` para mejorar la accesibilidad de la tabla.
+
+### Formulario de contacto
+
+He creado un formulario para que otras personas puedan ponerse en contacto conmigo y ofrecer artículos para la colección.
+
+El formulario utiliza:
+
+- Dos grupos de campos (`fieldset`) con sus correspondientes leyendas (`legend`).
+- Etiquetas (`label`) asociadas a sus campos.
+- Campos de texto, correo electrónico, teléfono, URL, número y fecha.
+- Casillas de verificación (`checkbox`).
+- Botones de opción (`radio`).
+- Un selector de tipos de artículos (`select`).
+- Un área de texto (`textarea`).
+- Botones para enviar y borrar los datos.
+
+También he utilizado atributos como `required`, `minlength`, `maxlength`, `placeholder` y `autofocus` para mejorar el funcionamiento del formulario.
+
+### Prueba del método GET
+
+Durante la comprobación del formulario he utilizado la siguiente dirección local para abrir la página:
+
+`http://127.0.0.1:3000/LENGUAJE%20DE%20MARCAS/Proyecto-integrador-LM2026/proyecto/contacto.html?vscode-livepreview=true`
+
+El método GET permite enviar los datos mediante la dirección URL, mientras que el método POST los envía en el cuerpo de la petición.
+
+### ¿Por qué utilizo POST?
+
+Finalmente, he dejado el formulario con `method="post"` porque los datos se envían en el cuerpo de la petición y no aparecen directamente en la dirección URL. Esto resulta más adecuado para enviar la información del formulario.
+### Validación W3C
+
+He comprobado las páginas HTML mediante el validador W3C.
+
+| Página | Resultado |
+|---|---|
+| `articulos.html` | Sin errores |
+| `contacto.html` | Sin errores |
+
+## 10. Qué he hecho en esta unidad
+
+En esta unidad he aprendido a crear y organizar tablas HTML para mostrar información de forma ordenada. He utilizado encabezados, filas, columnas y celdas combinadas.
+
+También he aprendido a crear formularios de contacto utilizando diferentes tipos de campos, etiquetas, botones, selectores y atributos de validación.
+
+Por último, he comprobado las páginas con el validador W3C y he trabajado con Git y GitHub para guardar los cambios realizados en el proyecto.
+
+## 11. Autor
 
 **Martín Alexey Motilla Ayuso**
 
 1.º DAM – Desarrollo de Aplicaciones Multiplataforma.
 
-Asignatura: Lenguajes de Marcas y Sistemas de Gestión de Información.
+Asignatura: Lenguaje de Marcas y Sistemas de Gestión de Información.
 
 Curso académico: 2026/2027.
 
-## 10. Palabra del día
+## 12. Palabra del día
 
 ### DÍA
 
