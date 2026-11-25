@@ -12,7 +12,9 @@
                             <xs:element name="procedencia" type="xs:string"/>
                             <xs:element name="numero_articulo" type="xs:string"/>
                             <xs:element name="duracion_cortejo_procesional" type="xs:string" minOccurs="0"/>
-                            <xs:element name="destacado" minOccurs="0"/>
+                            <xs:element name="destacado" minOccurs="0">
+                            <xs:complexType/>
+                            </xs:element>
                         </xs:sequence>
                         <xs:attribute name="id" type="xs:string" use="required"/>
                     </xs:complexType>
