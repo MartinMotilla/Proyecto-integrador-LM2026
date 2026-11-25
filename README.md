@@ -1,5 +1,43 @@
 # 🕯️ Proyecto Integrador: Colección Cofrade
 
+> «Detrás de cada artículo cofrade hay una historia, una devoción y un recuerdo de la Semana Santa».
+
+---
+
+## 📋 Ficha del proyecto
+
+| Dato | Información |
+|---|---|
+| **Proyecto** | Colección Cofrade |
+| **Autor** | Martín Alexey Motilla Ayuso |
+| **Usuario de GitHub** | martinmotilla |
+| **Curso** | 1.º DAM |
+| **Ciclo formativo** | Desarrollo de Aplicaciones Multiplataforma |
+| **Asignatura** | Lenguaje de Marcas y Sistemas de Gestión de Información |
+| **Centro** | MEDAC |
+| **Curso académico** | 2026/2027 |
+| **Tecnologías** | HTML5, CSS3, XML, DTD y XSD |
+| **Objetivo** | Conseguir en 2028 el Guinness World Records con la colección cofrade más grande del mundo |
+
+**✝️ Una colección que crece con la Semana Santa y conserva la historia de cada artículo.**
+
+## Entidades del proyecto
+
+En este proyecto se identifican las siguientes entidades principales:
+
+- **Colección cofrade:** conjunto de artículos relacionados con la Semana Santa que forman parte de mi colección personal.
+- **Artículo:** cada objeto que forma parte de la colección, como estampitas, medallas, libros, revistas, programas o calendarios.
+- **Hermandad o agrupación:** entidad cofrade relacionada con los artículos de la colección.
+- **Figuras principales y secundarias:** imágenes o representaciones religiosas que aparecen en los artículos.
+- **Localidad:** ciudad, barrio o pueblo relacionado con la procedencia de cada artículo.
+- **Banda de música:** agrupación musical relacionada con determinados artículos o hermandades.
+- **Colaborador:** persona o negocio que participa en el crecimiento de la colección mediante donaciones.
+- **Adquisición:** incorporación de un artículo a la colección, identificada mediante su fecha de adquisición.
+
+Estas entidades permiten organizar, clasificar y documentar los artículos, así como conocer su procedencia y su relación con la Semana Santa.
+
+---
+
 ## 1. Descripción del proyecto
 
 Este proyecto consiste en desarrollar una página web dedicada a mi colección de artículos relacionados con la Semana Santa.
@@ -37,6 +75,10 @@ Incluye:
 - Listado de los diferentes tipos de artículos.
 - Enlace a la página oficial de Guinness World Records.
 - Información general del proyecto.
+- Indicador de progreso de la colección.
+- Imágenes con sus correspondientes pies de foto.
+- Reproducción de audio y vídeo.
+- Preguntas frecuentes mediante elementos desplegables.
 
 ### 📦 Artículos (`proyecto/articulos.html`)
 
@@ -53,7 +95,7 @@ Los datos que se recogen son:
 - Si tiene música o no.
 - Banda de música.
 
-También incluye imágenes relacionadas con diferentes hermandades y agrupaciones.
+También incluye imágenes relacionadas con diferentes hermandades y agrupaciones, acompañadas de sus pies de foto, y una sección de preguntas frecuentes.
 
 ### 📩 Contacto (`proyecto/contacto.html`)
 
@@ -64,8 +106,9 @@ Incluye:
 - Correo electrónico de contacto.
 - Información sobre los artículos que se pueden donar.
 - Formulario para introducir nombre, correo electrónico y teléfono.
-- Campo para escribir un mensaje.
-- Selector de tipos de artículos.
+- Selector múltiple de tipos de artículos.
+- Campo numérico y campo de fecha.
+- Área de texto para escribir un mensaje.
 - Preguntas relacionadas con la Semana Santa y el material cofrade.
 - Botones para enviar o borrar el formulario.
 
@@ -105,10 +148,14 @@ La colección está abierta a artículos de cualquier lugar y año. Cuanto más 
 
 ## 6. Estructura del proyecto
 
+El proyecto está organizado en dos carpetas principales: `img/`, donde se almacenan las imágenes, y `proyecto/`, donde se encuentran las páginas web, los documentos XML, las hojas de estilo CSS y los archivos multimedia.
+
 ```text
 Proyecto-integrador-LM2026/
 │
+├── .gitignore
 ├── README.md
+│
 ├── img/
 │   ├── ap humildad.jpg
 │   ├── cristo cigarreras.jpg
@@ -117,6 +164,9 @@ Proyecto-integrador-LM2026/
 │   ├── cristo y virgen de triana.jpg
 │   ├── cristo y virgen los panaderos.jpg
 │   ├── cristo y virgen san gonzalo.jpg
+│   ├── escudo humildad sevilla este.png
+│   ├── estrella cofrade.png
+│   ├── Favicon.png
 │   ├── guinness rold record 2027.png
 │   ├── gwr_2027.jpg
 │   ├── libro-gwr.jpg
@@ -132,15 +182,32 @@ Proyecto-integrador-LM2026/
     ├── datos.dtd
     ├── datos.xsd
     │
-    └── CSS/
-        └── articulos.css
+    ├── CSS/
+    │   ├── articulos.css
+    │   ├── contacto.css
+    │   ├── estilos.css
+    │   └── index.css
+    │
+    └── media/
+        ├── saeta_cristo_san_isidoro.mp3
+        ├── saeta_cristo_san_isidoro.ogg
+        ├── saeta_cristo_san_isidoro.mp4
+        └── saeta_cristo_san_isidoro.webm
 ```
+
+Cada carpeta tiene una función:
+
+- **img:** contiene las imágenes utilizadas en el proyecto.
+- **proyecto:** contiene los archivos principales de la página web y los documentos XML.
+- **CSS:** almacena las hojas de estilo que controlan el diseño de las páginas.
+- **media:** contiene los archivos de audio y vídeo utilizados en la página principal.
+- **.gitignore:** contiene las reglas para excluir archivos y carpetas que no deben incorporarse al seguimiento de Git.
 
 ## 7. Organización y seguimiento de la colección
 
 Para llevar un control de los artículos, utilizo diferentes datos que permiten identificar cada incorporación:
 
-- **Número de artículo:** permite conocer la cantidad de artículos registrados.
+- **Número de artículo:** permite identificar cada artículo registrado.
 - **Fecha de adquisición:** permite saber cuándo recibí cada artículo.
 - **Tipo de artículo:** permite clasificarlo según su categoría.
 - **Hermandad o agrupación:** permite identificar su procedencia cofrade.
@@ -152,6 +219,7 @@ Además, quiero dedicar una sección del proyecto a las personas y negocios que 
 - **UD1-UD2:** primera entrega del proyecto, trabajando con HTML y XML.
 - **UD3:** ampliación y mejora del sitio web, incorporando nuevos contenidos y estilos CSS.
 - **UD5:** incorporación de una tabla de artículos y un formulario de contacto.
+- **UD6-UD7:** ampliación de las páginas web con elementos HTML5, contenido multimedia, imágenes con pies de foto, preguntas frecuentes y mejoras de presentación mediante CSS.
 
 ## 9. Trabajo realizado en la UD5: Tablas y formularios
 
@@ -176,28 +244,32 @@ He creado un formulario para que otras personas puedan ponerse en contacto conmi
 
 El formulario utiliza:
 
-- Dos grupos de campos (`fieldset`) con sus correspondientes leyendas (`legend`).
+- Grupos de campos (`fieldset`) con sus correspondientes leyendas (`legend`).
 - Etiquetas (`label`) asociadas a sus campos.
-- Campos de texto, correo electrónico, teléfono, URL, número y fecha.
-- Casillas de verificación (`checkbox`).
+- Campo de texto (`text`).
+- Campo de correo electrónico (`email`).
+- Campo de teléfono (`tel`).
+- Campo numérico (`number`).
+- Campo de fecha (`date`).
 - Botones de opción (`radio`).
-- Un selector de tipos de artículos (`select`).
-- Un área de texto (`textarea`).
-- Botones para enviar y borrar los datos.
+- Selector múltiple de tipos de artículos (`select`).
+- Área de texto (`textarea`).
+- Botones para enviar y borrar los datos (`submit` y `reset`).
 
-También he utilizado atributos como `required`, `minlength`, `maxlength`, `placeholder` y `autofocus` para mejorar el funcionamiento del formulario.
+También he utilizado atributos de validación como `required`, `minlength`, `maxlength`, `min`, `max`, `pattern` y `title` para controlar los datos introducidos.
 
 ### Prueba del método GET
 
-Durante la comprobación del formulario he utilizado la siguiente dirección local para abrir la página:
-
-`http://127.0.0.1:3000/LENGUAJE%20DE%20MARCAS/Proyecto-integrador-LM2026/proyecto/contacto.html?vscode-livepreview=true`
+Durante la comprobación del formulario he utilizado una dirección local de Live Preview para abrir la página de contacto.
 
 El método GET permite enviar los datos mediante la dirección URL, mientras que el método POST los envía en el cuerpo de la petición.
 
 ### ¿Por qué utilizo POST?
 
-Finalmente, he dejado el formulario con `method="post"` porque los datos se envían en el cuerpo de la petición y no aparecen directamente en la dirección URL. Esto resulta más adecuado para enviar la información del formulario.
+Finalmente, he dejado el formulario con `method="post"` porque los datos se envían en el cuerpo de la petición y no aparecen directamente en la dirección URL.
+
+El formulario utiliza `action="#"`, por lo que actualmente no está conectado a un servidor que almacene o procese los datos.
+
 ### Validación W3C
 
 He comprobado las páginas HTML mediante el validador W3C.
@@ -207,13 +279,68 @@ He comprobado las páginas HTML mediante el validador W3C.
 | `articulos.html` | Sin errores |
 | `contacto.html` | Sin errores |
 
-## 10. Qué he hecho en esta unidad
+## 10. Trabajo realizado en la UD6-UD7: Elementos HTML5 y multimedia
 
-En esta unidad he aprendido a crear y organizar tablas HTML para mostrar información de forma ordenada. He utilizado encabezados, filas, columnas y celdas combinadas.
+En estas unidades he ampliado las páginas web incorporando nuevos elementos HTML5 y mejorando su presentación mediante CSS.
 
-También he aprendido a crear formularios de contacto utilizando diferentes tipos de campos, etiquetas, botones, selectores y atributos de validación.
+### Estructura semántica
 
-Por último, he comprobado las páginas con el validador W3C y he trabajado con Git y GitHub para guardar los cambios realizados en el proyecto.
+He trabajado con elementos semánticos para organizar el contenido de las páginas:
+
+- `header` para la cabecera.
+- `nav` para la navegación.
+- `main` para el contenido principal.
+- `section` para dividir los contenidos en apartados.
+- `article` para organizar contenidos independientes.
+- `aside` para información complementaria.
+- `footer` para el pie de página.
+
+### Imágenes y pies de foto
+
+He utilizado los elementos `figure` y `figcaption` para agrupar imágenes con sus correspondientes descripciones.
+
+De esta forma, las imágenes de las hermandades y agrupaciones aparecen acompañadas de un texto que permite identificarlas.
+
+### Audio y vídeo
+
+En la página principal he incorporado un reproductor de audio con dos formatos:
+
+- MP3.
+- OGG.
+
+También he añadido un reproductor de vídeo con dos formatos:
+
+- MP4.
+- WebM.
+
+Los reproductores utilizan el atributo `controls` para permitir al usuario controlar la reproducción.
+
+El vídeo también utiliza `preload="metadata"` y una imagen de portada mediante el atributo `poster`.
+
+Los cuatro archivos multimedia tienen un tamaño individual inferior a 10 MB.
+
+### Indicador de progreso
+
+He utilizado el elemento `progress` para representar visualmente el crecimiento de mi colección.
+
+El indicador muestra 1.050 artículos registrados respecto al objetivo de 100.000.
+
+### Preguntas frecuentes
+
+He incorporado los elementos `details` y `summary` para crear preguntas frecuentes desplegables.
+
+Estos elementos permiten mostrar u ocultar información cuando el usuario pulsa sobre cada pregunta.
+
+En las páginas de Inicio y Artículos he incluido tres preguntas frecuentes en cada una.
+
+### Hojas de estilo CSS
+
+He organizado los estilos en varias hojas CSS para separar los estilos generales de los específicos de cada página:
+
+- `estilos.css`: estilos comunes.
+- `index.css`: estilos específicos de Inicio.
+- `articulos.css`: estilos específicos de Artículos.
+- `contacto.css`: estilos específicos de Contacto.
 
 ## 11. Autor
 
@@ -222,6 +349,8 @@ Por último, he comprobado las páginas con el validador W3C y he trabajado con 
 1.º DAM – Desarrollo de Aplicaciones Multiplataforma.
 
 Asignatura: Lenguaje de Marcas y Sistemas de Gestión de Información.
+
+Centro: MEDAC.
 
 Curso académico: 2026/2027.
 

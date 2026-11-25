@@ -1,0 +1,156 @@
+/* Martin Motilla Ayuso - 21-11-2026 */
+/* Estilos específicos de la página de inicio */
+
+/* CABECERA */
+
+header {
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+/* NAVEGACIÓN */
+
+nav ul {
+    gap: 25px;
+}
+
+nav a {
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+/* SECCIONES */
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e5dcc5;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* TÍTULOS */
+
+h2 {
+    border-bottom: 2px solid #c5a047;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #6b3974;
+    margin: 20px 0 10px;
+}
+
+/* PÁRRAFOS */
+
+p {
+    margin-bottom: 15px;
+}
+
+/* LISTAS */
+
+section ul {
+    margin: 15px 0 15px 30px;
+}
+
+section li {
+    margin-bottom: 6px;
+}
+
+/* PIES DE IMAGEN */
+
+figcaption {
+    color: #666666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* BARRA DE PROGRESO */
+
+progress {
+    width: 100%;
+    height: 25px;
+    accent-color: #4b2354;
+    margin: 10px 0;
+}
+
+/* INFORMACIÓN COMPLEMENTARIA */
+
+aside {
+    background-color: #f3edf4;
+    border-left: 5px solid #4b2354;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+details {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 5px;
+}
+
+summary {
+    color: #4b2354;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-family: Consolas, monospace;
+    margin-top: 10px;
+}
+
+/* ENLACES */
+
+a {
+    color: #6b3974;
+}
+
+a:hover {
+    color: #c5a047;
+}
+
+/* FIRMA */
+
+#firma-martinmotilla {
+    border-top: 1px solid #c5a047;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+/* DISEÑO ADAPTABLE A MÓVILES */
+
+@media (max-width: 600px) {
+
+    nav ul {
+        gap: 10px;
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    header {
+        padding: 20px 12px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+}

@@ -1,0 +1,14 @@
+﻿# Archivos de Windows
+Thumbs.db
+desktop.ini
+
+# Configuración de VS Code
+.vscode/
+
+# Archivos temporales
+*.tmp
+*.log
+
+# Copias de seguridad locales
+*.bak
+/proyecto_backup_2026-11-24/
