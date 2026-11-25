@@ -279,7 +279,7 @@ He comprobado las páginas HTML mediante el validador W3C.
 | `articulos.html` | Sin errores |
 | `contacto.html` | Sin errores |
 
-## 10. Trabajo realizado en la UD6-UD7: Elementos HTML5 y multimedia
+## Tarea 6-7: Trabajo realizado en la UD6-UD7
 
 En estas unidades he ampliado las páginas web incorporando nuevos elementos HTML5 y mejorando su presentación mediante CSS.
 
